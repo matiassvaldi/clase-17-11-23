@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de Numeros</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<center><body>
+
+  <center><h1>Generador de Numeros</h1></center>
+
+  <label for="numeroInput">Ingrese un número:</label>
+  <input type="number" id="numeroInput">
+  <button onclick="agregarNumero()" type="button" class="btn btn-outline-warning">Agregar</button>
+  <button onclick="generarNumeros()" type="button" class="btn btn-outline-warning">Generar</button>
+
+  <table id="numerosTable" class="table table-dark table-striped-columns">
+    <thead>
+      <tr>
+        <th>*</th>
+        <th>Número</th>
+      </tr>
+    </thead>
+    <tbody id="numerosBody">
+      
+    </tbody>
+  </table>
+
+  
+  <div class="d-grid gap-2">
+    <button onclick="calcularProm()" class="btn btn-primary" type="button">Calcular Promedio</button>
+    <button onclick="calcularMaxMin()" class="btn btn-primary" type="button">Maximo y Minimo</button>
+  </div>
+
+
+  <script src="./js/main.js"></script>
+</body></center>
+</html>
